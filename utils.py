@@ -17,7 +17,13 @@ def search_github(user_data):
     res = res.json()
     if res["total_count"]>0:
         for i in res["items"]:
-            github_list.append(i["html_url"])
+            github_dict = {
+                "platform": "Github",
+                "title": i["login"],
+                "link": i["html_url"],
+                "avatar_url": i["avatar_url"]
+            }
+            github_list.append(github_dict)
         return github_list
     else:
         return []
@@ -30,7 +36,6 @@ def search_vimeo(user_data):
     if user_data["last_name"]:
         vals.append(user_data["last_name"])
     query = " ".join(vals)
-    print(query)
     url = f"https://api.vimeo.com/users?direction=asc&page=2&per_page=20&query={query}&sort=relevant"
     headers = {
         "Authorization":f"bearer {config('VIMEO_PAK')}",
@@ -40,7 +45,13 @@ def search_vimeo(user_data):
     res = res.json()
     if res["total"]>0:
         for i in res["data"]:
-            vimeo_list.append(i["link"])
+            vimeo_dict = {
+                "platform": "Vimeo",
+                "title": i["name"],
+                "link": i["link"],
+                "avatar_url": i["pictures"]["base_link"]
+            }
+            vimeo_list.append(vimeo_dict)
         return vimeo_list
     else:
         return []
@@ -62,7 +73,13 @@ def search_gitlab(user_data):
     res = res.json()
     if len(res)>0:
         for i in res:
-            gitlab_list.append(i["web_url"])
+            gitlab_dict = {
+                "platform": "Gitlab",
+                "title": i["name"],
+                "link": i["web_url"],
+                "avatar_url": i["avatar_url"]
+            }
+            gitlab_list.append(gitlab_dict)
         return gitlab_list
     else:
         return []
@@ -81,7 +98,13 @@ def search_stack_exchange(user_data):
     res = res.json()
     if len(res["items"])>0:
         for i in res["items"]:
-            sk_ex_list.append(i["link"])
+            sk_ex_dict = {
+                "platform": "Stack Overflow",
+                "title": i["display_name"],
+                "link": i["link"],
+                "avatar_url": i["profile_image"]
+            }
+            sk_ex_list.append(sk_ex_dict)
         return sk_ex_list
     else:
         return []
@@ -92,15 +115,16 @@ INDEXED_SITES = {
     "Facebook": "facebook.com",
     "Instagram": "instagram.com",
     "X (Twitter)": "x.com",
+
     # "TikTok": "tiktok.com",
-    "Pinterest": "pinterest.com",
-    "Bitbucket": "bitbucket.org",
-    "YouTube": "youtube.com/channel",
+    # "Pinterest": "pinterest.com",
+    # "Bitbucket": "bitbucket.org",
+    # "YouTube": "youtube.com/channel",
     # "Behance": "behance.net",
     # "Dribbble": "dribbble.com",
-    "Medium": "medium.com",
-    "Reddit": "reddit.com/user",
-    "Quora": "quora.com/profile",
+    # "Medium": "medium.com",
+    # "Reddit": "reddit.com/user",
+    # "Quora": "quora.com/profile",
     # "ProductHunt": "producthunt.com"
 }
 
@@ -116,6 +140,8 @@ def search_indexed_google(user_data):
             None
         )
         country_code = gl_countries["country_code"]
+    else:
+        country_code = ""
 
     vals =[]
     for i in user_data.keys():
@@ -135,7 +161,6 @@ def search_indexed_google(user_data):
         }
         if country_code:
             params["gl"]=country_code
-        print(params)
         try:
             search = GoogleSearch(params)
             results = search.get_dict()

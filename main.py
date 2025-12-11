@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 
 from router_scraper import scrape_router
+from middlware import ScraperMiddleware
 
 
 app = FastAPI()
@@ -59,6 +60,7 @@ async def api_test():
     }
 
 app.include_router(scrape_router)
+app.add_middleware(ScraperMiddleware)
 
 if __name__=="__main__":
     uvicorn.run(app="main:app", host="0.0.0.0", port=8000, reload=True)
