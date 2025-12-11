@@ -1,0 +1,662 @@
+{
+	"info": {
+		"_postman_id": "1cb4e9d6-6a40-480e-b1a9-827f858e2c3a",
+		"name": "Profile Scraper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17162099"
+	},
+	"item": [
+		{
+			"name": "Get Github Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/github",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"github"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Github Links",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/github",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"github"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:16:48 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "4561"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shah\",\n        \"link\": \"https://github.com/shah\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/47497?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"Rekha\",\n        \"link\": \"https://github.com/Rekha\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/98130?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahradelahi\",\n        \"link\": \"https://github.com/shahradelahi\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/17948260?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahednasser\",\n        \"link\": \"https://github.com/shahednasser\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/27354907?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"Dhravya\",\n        \"link\": \"https://github.com/Dhravya\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/63950637?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"aryashah2k\",\n        \"link\": \"https://github.com/aryashah2k\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/73865728?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"ShahjalalShohag\",\n        \"link\": \"https://github.com/ShahjalalShohag\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/33003206?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"rekharchandran\",\n        \"link\": \"https://github.com/rekharchandran\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/50706192?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahriar0999\",\n        \"link\": \"https://github.com/shahriar0999\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/110348315?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahnewaztameem\",\n        \"link\": \"https://github.com/shahnewaztameem\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/19238216?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"kbrsh\",\n        \"link\": \"https://github.com/kbrsh\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/15644571?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"Shahzaib-D-Memon\",\n        \"link\": \"https://github.com/Shahzaib-D-Memon\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/57555093?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"smashah\",\n        \"link\": \"https://github.com/smashah\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/5903821?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"pratibhapratibhabhabha\",\n        \"link\": \"https://github.com/pratibhapratibhabhabha\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/138123726?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"ankitshah009\",\n        \"link\": \"https://github.com/ankitshah009\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/3519772?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"Rekha0980\",\n        \"link\": \"https://github.com/Rekha0980\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/101573056?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"avidLearnerInProgress\",\n        \"link\": \"https://github.com/avidLearnerInProgress\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/28640082?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahidhk\",\n        \"link\": \"https://github.com/shahidhk\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/4124733?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"ShahriyarR\",\n        \"link\": \"https://github.com/ShahriyarR\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/3852029?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"ShaheenJawadi\",\n        \"link\": \"https://github.com/ShaheenJawadi\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/25234311?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"daaku\",\n        \"link\": \"https://github.com/daaku\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/593?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahriar-rahman\",\n        \"link\": \"https://github.com/shahriar-rahman\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/74823805?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"rekharekharekh\",\n        \"link\": \"https://github.com/rekharekharekh\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/138120390?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahriarsajeeb\",\n        \"link\": \"https://github.com/shahriarsajeeb\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/87035691?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"kajal-rekha\",\n        \"link\": \"https://github.com/kajal-rekha\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/109305530?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"ShahariarRabby\",\n        \"link\": \"https://github.com/ShahariarRabby\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/21360662?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"shahrowz\",\n        \"link\": \"https://github.com/shahrowz\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/160922384?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"meetps\",\n        \"link\": \"https://github.com/meetps\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/6251729?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"SHAHFAISAL80\",\n        \"link\": \"https://github.com/SHAHFAISAL80\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/127482423?v=4\"\n    },\n    {\n        \"platform\": \"Github\",\n        \"title\": \"sytelus\",\n        \"link\": \"https://github.com/sytelus\",\n        \"avatar_url\": \"https://avatars.githubusercontent.com/u/2096835?v=4\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Vimeo Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/vimeo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"vimeo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Vimeo Links",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/vimeo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"vimeo"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:20:11 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "2234"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user54849031\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/14578828?sig=39e9072b9ae7dcfad4a7f7583fe9fb87f41f8dcf9000aec341bc322b196a4bec&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user15529299\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/defaults-blue?region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user91003484\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/defaults-blue?region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user137170323\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/50225505?sig=eb9d728f1bd86ce0060c456846638702bd2a4b678815bdc5200facc994029bdc&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha shah\",\n        \"link\": \"https://vimeo.com/user15271825\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/defaults-blue?region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Shah Rekha\",\n        \"link\": \"https://vimeo.com/user59594621\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/16700534?sig=76a45e346fb47bef2219628b2ec99d55d3d88cbd6958e96264d974e6351532cb&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user234003132\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/109231198?sig=3765793fb60bb20d31a766823439b87d9b2f55bb9d0913bd2386d76062fecfcd&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user161209117\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/64071797?sig=82c8db0b6c1cb448fb19e68cee602135251590b75f10fcd8ec4d4e02acebe6b1&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"REKHA SHAH\",\n        \"link\": \"https://vimeo.com/user119842393\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/42024070?sig=5685f899e090deebb23962662b2dabfebd1f61539a32ed5064219ea5633abbc2&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user193094194\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/82415868?sig=236535a4738768bb099af9088d390e9e4d502ebca3d809a20eafadf9c45c9154&v=1&region=us\"\n    },\n    {\n        \"platform\": \"Vimeo\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://vimeo.com/user99666748\",\n        \"avatar_url\": \"https://i.vimeocdn.com/portrait/32381769?sig=c69e7da4d325bab73ba2337c064822d2c4ac9cbdb4b57950a47a8a4276d6b069&v=1&region=us\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Gitlab Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/gitlab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"gitlab"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Gitlab Links",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/gitlab",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"gitlab"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:19:35 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "461"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platform\": \"Gitlab\",\n        \"title\": \"Placeholder Rekha Shah\",\n        \"link\": \"https://gitlab.com/rkhatri_placeholder_lmdtu2\",\n        \"avatar_url\": \"https://secure.gravatar.com/avatar/2ab29a590b8e35c798245a1a0ec782a2ab4911d376470208997b10c840dd4737?s=80&d=identicon\"\n    },\n    {\n        \"platform\": \"Gitlab\",\n        \"title\": \"hshahsurekha\",\n        \"link\": \"https://gitlab.com/hshahsurekha\",\n        \"avatar_url\": \"https://secure.gravatar.com/avatar/e86fc33e72c639582efa5463b51c07ba2f6942fd154b6f5013d53f0b45ed3eae?s=80&d=identicon\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Stack Overflow Links",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/stack-overflow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"stack-overflow"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Stack Overflow Links",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/stack-overflow",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"stack-overflow"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:18:37 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "450"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platform\": \"Stack Overflow\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://stackoverflow.com/users/16751155/rekha-shah\",\n        \"avatar_url\": \"https://lh3.googleusercontent.com/a-/AOh14GhglhAYBSPLKPNmsK__fHS4EjrLG_Ad-uggy0ibnA=k-s256\"\n    },\n    {\n        \"platform\": \"Stack Overflow\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://stackoverflow.com/users/8643864/rekha-shah\",\n        \"avatar_url\": \"https://www.gravatar.com/avatar/3e9dff65dad9e90e59c00468c147976f?s=256&d=identicon&r=PG&f=y&so-version=2\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get Google Index LInks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/google-index",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"google-index"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Google Index LInks",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							},
+							{
+								"key": "",
+								"value": "",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"first_name\": \"Rekha\",\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/google-index",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"google-index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:17:34 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "2197"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"platform\": \"LinkedIn\",\n        \"title\": \"Rekha Shah - Vice President, TV Licensing at Paramount ...\",\n        \"link\": \"https://ca.linkedin.com/in/rekha-shah-5aa11813\",\n        \"snippet\": \"Rekha Shah. Vice President, TV Licensing at Paramount Global and Board Member, Ontario Creates. Paramount University of Toronto - Rotman School of ...\"\n    },\n    {\n        \"platform\": \"LinkedIn\",\n        \"title\": \"Rekha Shah - Corporate Development Manager at Jencap\",\n        \"link\": \"https://www.linkedin.com/in/rekhashahitprofessional\",\n        \"snippet\": \"Rekha Shah. Corporate Development Manager at Jencap. Jencap Sardar Patel University, Vallabh Vidyanagar. Edison, New Jersey, United States. 630 ...\"\n    },\n    {\n        \"platform\": \"Facebook\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://www.facebook.com/rekha.shah.188478/reels/\",\n        \"snippet\": \"Rekha Shah. 35382 likes · 707 talking about this. Nepali Singer / Model /Social Worker Activist (Equality & Equity with Gender Identity )\"\n    },\n    {\n        \"platform\": \"Facebook\",\n        \"title\": \"Rekha Shah\",\n        \"link\": \"https://www.facebook.com/singerrekhashah/reels/\",\n        \"snippet\": \"Rekha Shah. 19348 likes · 1 talking about this. Nepali singer / Model Social Worker Activist ( Equality & Equity with Gender Identity )\"\n    },\n    {\n        \"platform\": \"Instagram\",\n        \"title\": \"Rekha Shah (@rekhashahofficial)\",\n        \"link\": \"https://www.instagram.com/rekhashahofficial/\",\n        \"snippet\": \"Rekha Shah (@rekhashahofficial) • Instagram photos and videos. Instagram. Log ... Rekha Shah. 19,558 followers. 370 following. Nepali singer / Model ...\"\n    },\n    {\n        \"platform\": \"Instagram\",\n        \"title\": \"Rekha Shah (@rekhashah1968)\",\n        \"link\": \"https://www.instagram.com/rekhashah1968/\",\n        \"snippet\": \"Rekha Shah (@rekhashah1968) • Instagram photos and videos. Instagram. Log in ... Rekha Shah. 5,067 followers. 148 following. love you all❤️❤️ , I love ...\"\n    },\n    {\n        \"platform\": \"X (Twitter)\",\n        \"title\": \"KcwLpc - Rekha Shah\",\n        \"link\": \"https://x.com/KcwLpc\",\n        \"snippet\": \"Rekha Shah (@KcwLpc) - Posts - CEO, KCW LPC; Member, Pharmacy London; London LPC lead for London Pharmacy Imms; Northwood Golf Club.\"\n    },\n    {\n        \"platform\": \"X (Twitter)\",\n        \"title\": \"Rekha Shah (@mommieof_4) / Posts / X\",\n        \"link\": \"http://x.com/mommieof_4\",\n        \"snippet\": \"Rekha Shah (@mommieof_4) - Posts - | X (formerly Twitter) ... Rekha Shah. mommieof_4. Location: Richmond, TX. Joined: Sep 14, 2018. 17Posts.\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Sample Error",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/scrape/github",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"scrape",
+						"github"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sample Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "x-api-key",
+								"value": "a19b0asdghf7374440d1d00d70ad9d9c99196f321732bbbjs"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"last_name\": \"Shah\",\n  \"email\": \"\",\n  \"phone\": \"\",\n  \"country\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/scrape/github",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"scrape",
+								"github"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "date",
+							"value": "Thu, 11 Dec 2025 06:25:18 GMT"
+						},
+						{
+							"key": "server",
+							"value": "uvicorn"
+						},
+						{
+							"key": "content-length",
+							"value": "65"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"invalid request\",\n    \"message\": \"request validation failed\"\n}"
+				}
+			]
+		}
+	]
+}
