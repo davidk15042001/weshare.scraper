@@ -5,6 +5,8 @@ from fastapi import Request, status
 # MIDDLEWARE
 class ScraperMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
+        if request.method == "OPTIONS":
+            return await call_next(request)
         try:
             response = await call_next(request)
             return response

@@ -142,11 +142,14 @@ def search_indexed_google(user_data):
         country_code = gl_countries["country_code"]
     else:
         country_code = ""
-
-    vals =[]
-    for i in user_data.keys():
-        if user_data[i]:
-            vals.append(user_data[i])
+    
+    vals = []
+    if user_data["first_name"]:
+        vals.append(user_data["first_name"])
+    if user_data["last_name"]:
+        vals.append(user_data["last_name"])
+    if user_data["country"]:
+        vals.append(user_data["country"])
     query_user = " ".join(vals)
 
     found_profiles = []
@@ -156,7 +159,7 @@ def search_indexed_google(user_data):
             "q": query,
             "api_key": serf_api_key,
             "engine": "google",
-            "num": 3,
+            "num": 5,
             "hl": "en"
         }
         if country_code:
@@ -175,5 +178,5 @@ def search_indexed_google(user_data):
                         "snippet": item.get("snippet")
                     })
         except Exception as e:
-            print(f"Error -> {e}")
+            return f"Error -> {e}"
     return found_profiles
