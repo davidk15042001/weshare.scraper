@@ -30,6 +30,7 @@ def search_github(user_data):
         return []
 
 def search_vimeo(user_data):
+    print("QUIRYING VIMEO APIS")
     vimeo_list = []
     vals = []
     if user_data["first_name"]:
@@ -59,6 +60,7 @@ def search_vimeo(user_data):
 
 
 def search_gitlab(user_data):
+    print("QUIRYING GITLAB APIS")
     gitlab_list = []
     vals = []
     if user_data["first_name"]:
@@ -87,6 +89,7 @@ def search_gitlab(user_data):
 
 
 def search_stack_exchange(user_data):
+    print("QUIRYING STACK EXCHANGE APIS")
     sk_ex_list = []
     vals = []
     if user_data["first_name"]:
@@ -131,6 +134,7 @@ INDEXED_SITES = {
 
 
 def search_indexed_google(user_data):
+    print("QUIRYING GOOGLE APIS")
     serf_api_key = config('SERP_API_KEY')
 
     if user_data["country"]:
