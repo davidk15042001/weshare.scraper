@@ -7,11 +7,11 @@ class ScraperMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
         if request.method == "OPTIONS":
             return await call_next(request)
-        try:
-            response = await call_next(request)
-            return response
-        except Exception as e:
-            return JSONResponse(
-                content={"error": {"message": f"Error -> {e}"}},
-                status_code=status.HTTP_400_BAD_REQUEST
-            )
+        # try:
+        response = await call_next(request)
+        return response
+        # except Exception as e:
+        #     return JSONResponse(
+        #         content={"error": {"message": f"Error -> {e}"}},
+        #         status_code=status.HTTP_400_BAD_REQUEST
+        #     )

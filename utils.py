@@ -6,6 +6,7 @@ import json
 
 
 def search_github(user_data):
+    print("QUIRYING GITHUB APIS")
     github_list = []
     vals = []
     for i in user_data.keys():
